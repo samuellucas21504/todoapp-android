@@ -44,7 +44,7 @@ public class RecyclerItemTouchHelper extends ItemTouchHelper.SimpleCallback {
                     (dialog, which) -> adapter.notifyItemChanged(viewHolder.getBindingAdapterPosition()));
 
             AlertDialog dialog = builder.create();
-
+            dialog.setCancelable(false);
             dialog.show();
         }
         else {
